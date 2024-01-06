@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierungsbestätigung | Kleiderspende direkt e.V.</title>
+    <!-- Favicons für unterschiedliche Endgeräte -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap-Einbindung -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="40px">
+                    Kleiderspende direkt e.V.
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">Über uns</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-5 py-5 text-center col-md-6">
+
+            <!-- Seiteninhalt bei Abholung der Kleidung -->
+            <div id="abholung">
+                <h1>Vielen Dank für Ihre Registrierung!</h1>
+
+                <p class="my-3">Das Sammelfahrzeug kommt zur ausgewählten Zeit zu Ihnen, um die Kleidung
+                    abzuholen.<br><br>
+                    Zur Kontrolle sehen Sie hier nochmal alle von Ihnen angegebenen Daten:
+                </p>
+
+                <table class="table text-start w-auto mx-auto">
+                    <tbody>
+                        <tr>
+                            <th>Ihr Name:</th>
+                            <td id="name1"></td>
+                        </tr>
+                        <tr>
+                            <th>Abholadresse:</th>
+                            <td id="adresse1"></td>
+                        </tr>
+                        <tr>
+                            <th>Abholzeitpunkt:</th>
+                            <td id="zeit1"></td>
+                        </tr>
+                        <tr>
+                            <th>Anzahl und Art der Kleidung:</th>
+                            <td id="kleidung1"></td>
+                        </tr>
+                        <tr>
+                            <th>Krisengebiet:</th>
+                            <td id="gebiet1"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="mt-4">Sollte etwas nicht korrekt sein, melden Sie sich bitte unbedingt unter +49 351 12345678
+                    oder registrierung@kleiderspende-direkt.de.</p>
+            </div>
+
+            <!-- Seiteninhalt bei Abgabe der Kleidung vor Ort -->
+            <div id="abgabe">
+                <h1>Die Registrierung war erfolgreich.</h1>
+
+                <p class="my-4">Folgende Daten wurden hinterlegt:
+                </p>
+
+                <table class="table text-start w-auto mx-auto">
+                    <tbody>
+                        <tr>
+                            <th>Anzahl und Art der Kleidung:</th>
+                            <td id="kleidung2"></td>
+                        </tr>
+                        <tr>
+                            <th>Krisengebiet:</th>
+                            <td id="gebiet2"></td>
+                        </tr>
+                        <tr>
+                            <th>Registrierungszeitpunkt:</th>
+                            <td id="zeit2"></td>
+                        </tr>
+                        <tr>
+                            <th>Ort:</th>
+                            <td>Dresden</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Zusätzlicher Zeilenumbruch, der nur bei sehr kleinen Bildschirmen angezeigt wird -->
+            <!-- schafft Platz zum Footer, wenn sich die Navigation zu vertikal ändert-->
+            <div class="d-sm-none"><br></div>
+
+        </div>
+    </main>
+
+    <footer class="bg-light fixed-bottom">
+        <div class="text-center">
+            &copy; 2023 Kleiderspende direkt e.V.
+        </div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link pt-0" href="privacy.html">Datenschutz</a></li>
+                    <li class="nav-item"><a class="nav-link pt-0" href="imprint.html">Impressum</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="adjustConfirmation.js"></script>
+
+</body>
+
+</html>
